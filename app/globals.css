@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #191919;
+  color: white;
+}
+
+{/** Navbar Styling */}
+.logo {
+  font-family: "Holidayfree", sans-serif;
+  text-transform: capitalize;
+}
+
+
+.menu-bar, 
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+.menu-bar a,
+.menu-open p {
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-close p {
+  padding-top: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 2em;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+}
+
+
+.menu-close-icon {
+  flex: 2;
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+}
+.menu-copy {
+  flex: 4;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2em;
+}
+.menu-links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 6vw;
+}
+
+.menu-link-item {
+  width: max-content;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+.menu-Link-item-holder {
+  position: relative;
+}
+
+.menu-link-item-holder a {
+  color: •#000;
+  font-size: 80px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  Line-height: 85%;
+}
+
+.menu-info {
+  display: flex;
+}
+
+.menu-info-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+@media (max-width: 900px) {
+  .menu-close-icon {
+    display: none;
+  }
+
+  .menu-copy {
+    padding-top: 8em;
+  }
+  .menu-link-item-holder a {
+    font-size: 60px
+  }
+}
+
+{/** MainPage Styling */}
+
+.MargiText {
+  font-family: "Work Sans", sans-serif;
+}
+
+.herot {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+{/** About */}
+
+.textp {
+  font-family: "Mulish", sans-serif;
+  font-size: 1vw;
+}
+.linksfont {
+  font-family: "Work Sans", sans-serif;
+}
+.SectionHeader {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 12vw;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  margin-top: -100px;
+}
+
+{/** Prject Section Styling*/}
+
+{/* Skills or Services*/}
+
+.smooth-content {
+    position: sticky;
+    top:0;
+    width:100%;
+    min-height: 60vh;
+    border-top: 1px solid #2b2b2b;
+    border-radius: 20px;
+    font-size: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #191919;
+    display: flex;
+    color: #000;
+  }
+
+
+{/** Contact page*/ }
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
+}
+
