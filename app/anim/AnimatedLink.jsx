@@ -16,7 +16,7 @@ const AnimatedLetter = ({ character, animation }) => {
 
 const AnimatedWord = ({ title, animation, isHovered }) => {
   return (
-    <motion.span
+    <motion.div
       variants={animation}
       initial="rest"
       animate={isHovered ? "hover" : "rest"}
@@ -31,7 +31,7 @@ const AnimatedWord = ({ title, animation, isHovered }) => {
             <AnimatedLetter key={i} character={character} animation={animation} />
           )
         )}
-    </motion.span>
+    </motion.div>
   );
 };
 

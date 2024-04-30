@@ -43,7 +43,6 @@ body {
 }
 
 .menu-close p {
-  padding-top: 4px;
   color: #fff;
   cursor: pointer;
 }
@@ -109,7 +108,9 @@ body {
   flex-direction: column;
   justify-content: flex-end;
 }
-
+.Nav {
+  clip-path: polygon(0 0, 200% 0, 100% 100%, 0% 100%);
+}
 @media (max-width: 900px) {
   .menu-close-icon {
     display: none;
@@ -135,10 +136,10 @@ body {
 
 {/** About */}
 
-.textp {
-  font-family: "Mulish", sans-serif;
-  font-size: 1vw;
+.abouttext {
+  font-family: 'Mulish', sans-serif;
 }
+
 .linksfont {
   font-family: "Work Sans", sans-serif;
 }
@@ -159,17 +160,15 @@ body {
     position: sticky;
     top:0;
     width:100%;
-    min-height: 60vh;
+    min-height: 70vh;
     border-top: 1px solid #2b2b2b;
     border-radius: 20px;
-    font-size: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #191919;
-    display: flex;
-    color: #000;
   }
+
 
 
 {/** Contact page*/ }
@@ -187,3 +186,7 @@ body {
   animation: spin-slow 3s linear infinite;
 }
 
+Link:hover ~ .cursor {
+  transform: scale(2);
+  opacity: 0;
+}
