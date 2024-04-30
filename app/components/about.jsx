@@ -17,7 +17,7 @@ export default function About() {
       <div className='w-full md:max-w-[35vw] lg:mt-64 p-10 md:p-0'>
         <p className='abouttext font-normal xl:text-2xl text'>
         Hey there, I'm Shah Faisal. Passionate about design and development, I build immersive digital adventures filled with pixels, passion, and plenty of "wow" moments that leave a lasting impression. 
-        In this fast-paced digital realm, it's not just about standing out—it's about leaving your mark on the world.
+        In this fast-paced digital realm, it's not just about standing out it's about leaving your mark on the world.
         </p>
       </div>
     </div>
