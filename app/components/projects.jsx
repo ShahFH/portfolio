@@ -9,7 +9,7 @@ import TextReveal from '../anim/TextReveal';
 export default function Projects() {
 
   return (
-    <div id='project' className="mx-auto md:mx-8 lg:mx-16 mt-10 h-full my-52 grid justify-center items-center">
+    <div id='project' className="mx-8 md:mx-8 lg:mx-16 mt-10 h-full my-52 grid justify-center items-center">
       {/** Card 1 */}
       <div className="grid md:grid-cols-2 pt-15 mb-16 ">
         {/** Side 1: Image */}
