@@ -76,14 +76,14 @@ export default function Navbar() {
                     {/** socail icons */}
                     <div className='menu-info'>
                         <div className='menu-info-col flex flex-col justify-center content-end linksfont'>
-                            <a href='https://twitter.com/ShahFaisal_H'><AnimatedLink title="Twitter" /></a>
-                            <a href='https://github.com/ShahFH'><AnimatedLink title="Github" /></a>
-                            <a href='https://shahblogg.netlify.app/'><AnimatedLink title="Blog" /></a>
-                            <a href='https://www.linkedin.com/in/shah-faisal-h/'><AnimatedLink title="LinkedIn" /></a>
+                            <a className='menu-link-item-holder' href='https://twitter.com/ShahFaisal_H'><AnimatedLink title="Twitter" /></a>
+                            <a className='menu-link-item-holder' href='https://github.com/ShahFH'><AnimatedLink title="Github" /></a>
+                            <a className='menu-link-item-holder' href='https://shahblogg.netlify.app/'><AnimatedLink title="Blog" /></a>
+                            <a className='menu-link-item-holder' href='https://www.linkedin.com/in/shah-faisal-h/'><AnimatedLink title="LinkedIn" /></a>
                         </div>
                         {/** Rondom Text  */}
                         <div className='menu-info-col'>
-                            <p className=' text-[2vw] tracking-tight '>Take the first step. Let’s Connect.</p>
+                            <p className=' text-[2vw] tracking-tight menu-link-item-holder'>Take the first step. Let’s Connect.</p>
                         </div>
                     </div>
                 </div>
