@@ -66,7 +66,7 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className='menu-copy'>
-                    <div className='menu-links leading-tight tracking-wide'>
+                    <div className='menu-links leading-tight tracking-wide navlink'>
                         <Link className='menu-link-item-holder' href={"/"}>Home</Link>
                         <Link className='menu-link-item-holder' href={"#about"}>About</Link>
                         <Link className='menu-link-item-holder' href="#project">Project</Link>

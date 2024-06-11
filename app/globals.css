@@ -82,6 +82,12 @@ body {
   font-size: 6vw;
 }
 
+@media (max-width: 800px) {
+  .menu-links Link{
+    font-size: 400px;
+  }
+}
+
 .menu-link-item {
   width: max-content;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
